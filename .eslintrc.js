@@ -49,6 +49,20 @@ module.exports = {
       'error',
       { ignore: ['css', 'global', 'jsx'] },
     ],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+    ],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+      },
+    ],
+    'unused-imports/no-unused-imports': 'error',
+    'no-console': 'warn',
   },
   root: true,
   parser: '@typescript-eslint/parser',
@@ -58,6 +72,7 @@ module.exports = {
     'react',
     'simple-import-sort',
     'import',
+    'unused-imports',
   ],
   parserOptions: {
     project: './tsconfig.json',
