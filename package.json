@@ -12,7 +12,7 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,scss}'",
     "prepare": "husky install",
     "check-types": "tsc",
-    "test": "cypress run --record --key 1a89fbab-44b5-483a-9e72-68118d9e1c99",
+    "test": "cypress run --record --key 2e54202b-9d5f-460d-b069-0d7e4eafb752",
     "validate": "yarn run prettier & yarn run lint:eslint & yarn run check-types & yarn run build"
   },
   "dependencies": {
