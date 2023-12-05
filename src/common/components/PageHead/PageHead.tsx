@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { PropsWithChildren, useMemo } from 'react';
+import { type PropsWithChildren, useMemo } from 'react';
 
 export interface PageHeadProps {
   name?: string;
